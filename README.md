@@ -1,9 +1,9 @@
-# Prueba tecnica Foodology 
-## _Postulante: Jose Alberto Palomino Aguirre_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+# Node.JS Login Rappi 
 
-Proyecto con fin de demostrar el conocimiento y la capacidad tecnica para la empresa Foodology segun una problematica que esta empresa presenta.
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
+Este proyecto tiene como finalidad realizar un aplicativo el cual pueda iniciar sesión en el API de Rappi. Es importante aclarar que **es un proyecto personal y de aprendizaje propio** para el uso de Node.js y Express
 
 ## Features
 
@@ -82,7 +82,7 @@ https://services.grability.rappi.com/api/ms/address/autocomplete?lng='+longitud+
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the Apache License 2.0 . See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
