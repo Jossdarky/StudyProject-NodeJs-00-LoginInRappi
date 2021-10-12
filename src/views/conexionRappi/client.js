@@ -1,3 +1,5 @@
+
+
 function printLog(log) {
   const timeElapsed = Date.now();
   const today = new Date(timeElapsed);
@@ -5,6 +7,7 @@ function printLog(log) {
 }
 
 printLog('Client-side code running');
+
 
 
 /**

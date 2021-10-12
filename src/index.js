@@ -30,7 +30,6 @@ app.use('/server', require('./routes/links'));
 app.use('/conexionRappi', express.static(path.join(__dirname, 'views/conexionRappi')));
 app.use('/css', express.static(path.join(__dirname, 'css')));
 
-
 //inicio del servidor
 app.listen(app.get('port'), () => {
 	console.log('listening on ' + app.get('port'));

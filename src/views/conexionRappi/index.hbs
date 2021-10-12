@@ -1,7 +1,10 @@
 <div class="container">
   <div class="mt-5">
+
+    <!-- TextArea informativo -->
     <textarea readonly class="col-12" rows="10" id="logInfo"></textarea>
 
+    <!-- Paso 1, obtener el numero celular para enviar el sms -->
     <div id="step1" class="row">
       <label for="telefonoInput" class="col-2">Telefono</label>
       <div class="col-8">
@@ -12,7 +15,8 @@
       </div>
     </div>
 
-    <div class="row" style="visibility: hidden;" id="step2">
+    <!-- Paso 2, obtener el codigo SMS enviado al celular para validarlo -->
+    <div class="row" style="visibility: collapse;" id="step2">
       <label for="text" class="col-2">Codigo SMS</label>
       <div class="col-8">
         <input id="codeSMSInput" name="codeSMSInput" type="text" class="form-control" value="">
@@ -22,7 +26,8 @@
       </div>
     </div>
 
-    <div class="row" style="visibility: hidden;" id="step2p2">
+    <!-- Paso opcional 2.1, obtener el codigo enviado al correo electronico para validarlo -->
+    <div class="row" style="visibility: collapse;" id="step2p2">
       <label for="text" class="col-2">Codigo email</label>
       <div class="col-8">
         <input id="codeEmailInput" name="codeEmailInput" type="text" class="form-control" value="">
@@ -32,18 +37,26 @@
       </div>
     </div>
 
+    <div class="row" style="visibility: ;" id="step3">
 
-    <div class="row" style="visibility: hidden;" id="step3">
-      <label for="text" class="col-2">Direccion</label>
-      <div class="col-8">
-        <input id="direccionInput" name="direccionInput" type="text" class="form-control" value="">
+      <div class="row">
+        <label for="text" class="col-2">Ubicacion</label>
+        <div class="col-6">
+          <input id="latitud" name="latitud" placeholder="Latitud" type="number" class="form-control">
+          <input id="longitud" name="longitud" placeholder="Longitud" type="number" class="form-control">
+        </div>
+        <div class="col-2">
+          <button id="buscarDireccionButton" class="btn btn-primary">Obtener ranking Rappi</button>
+        </div>
+        <label id="posicionRappi" for="text" class="col-2"></label>
       </div>
-      <div class="col-2">
-        <button id="buscarDireccionButton" class="btn btn-primary">Enviar Codigo</button>
-      </div>
+
     </div>
+
 
   </div>
 
+</div>
 
-  <script src="conexionRappi/client.js" type="text/javascript"></script>
+
+<script src="conexionRappi/client.js" type="text/javascript"></script>
